@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/topGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.2" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/startGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/endGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.95" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/boardingTextView"
+        style="@style/Header2.Bold.Gray400"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/boarding_time_title"
+        app:layout_constraintEnd_toStartOf="@+id/endGuideline"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/boardingTimeTextView"
+        style="@style/Title.Bold.White"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/boarding_time_detail"
+        app:layout_constraintEnd_toStartOf="@+id/endGuideline"
+        app:layout_constraintTop_toBottomOf="@id/boardingTextView" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/planeRouteImageView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/plane_route"
+        app:layout_constraintEnd_toEndOf="@+id/endGuideline"
+        app:layout_constraintStart_toStartOf="@+id/startGuideline"
+        app:layout_constraintTop_toTopOf="@id/topGuideline" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/startDestinationTextView"
+        style="@style/LargeTitle.White"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/short_bkk_airport"
+        app:layout_constraintStart_toStartOf="@id/startGuideline"
+        app:layout_constraintTop_toBottomOf="@+id/planeRouteImageView" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/startAirportTextView"
+        style="@style/Body.Bold.Gray300"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bkk_airport"
+        app:layout_constraintStart_toStartOf="@id/startGuideline"
+        app:layout_constraintTop_toBottomOf="@+id/startDestinationTextView" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/endDestinationTextView"
+        style="@style/LargeTitle.White"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/short_hkt_airport"
+        app:layout_constraintEnd_toStartOf="@+id/endGuideline"
+        app:layout_constraintTop_toBottomOf="@+id/planeRouteImageView" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/endAirportTextView"
+        style="@style/Body.Bold.Gray300"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hkt_airport"
+        app:layout_constraintEnd_toStartOf="@+id/endGuideline"
+        app:layout_constraintTop_toBottomOf="@+id/endDestinationTextView" />
+
+    <com.example.boardingpass.BoardingPassDetailView
+        android:id="@+id/passengerView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        app:layout_constraintStart_toStartOf="@+id/startGuideline"
+        app:layout_constraintTop_toBottomOf="@+id/startAirportTextView"
+        app:text_detail="@string/passenger_detail"
+        app:text_title="@string/passenger_title" />
+
+    <com.example.boardingpass.BoardingPassDetailView
+        android:id="@+id/dateView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        app:layout_constraintEnd_toStartOf="@+id/endGuideline"
+        app:layout_constraintTop_toBottomOf="@+id/endAirportTextView"
+        app:text_detail="@string/date_detail"
+        app:text_title="@string/date_title" />
+
+    <com.example.boardingpass.BoardingPassDetailView
+        android:id="@+id/flightNumberView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        app:layout_constraintEnd_toStartOf="@id/gateView"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="@+id/startGuideline"
+        app:layout_constraintTop_toBottomOf="@+id/passengerView"
+        app:text_detail="@string/flight_number_detail"
+        app:text_title="@string/flight_number_title" />
+
+    <com.example.boardingpass.BoardingPassDetailView
+        android:id="@+id/gateView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toStartOf="@id/seatView"
+        app:layout_constraintStart_toEndOf="@id/flightNumberView"
+        app:layout_constraintTop_toTopOf="@id/flightNumberView"
+        app:text_detail="@string/gate_detail"
+        app:text_title="@string/gate_title" />
+
+    <com.example.boardingpass.BoardingPassDetailView
+        android:id="@+id/seatView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toStartOf="@id/classView"
+        app:layout_constraintStart_toEndOf="@id/gateView"
+        app:layout_constraintTop_toTopOf="@id/gateView"
+        app:text_detail="@string/seat_detail"
+        app:text_title="@string/seat_title" />
+
+    <com.example.boardingpass.BoardingPassDetailView
+        android:id="@+id/classView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toStartOf="@+id/endGuideline"
+        app:layout_constraintStart_toEndOf="@id/seatView"
+        app:layout_constraintTop_toTopOf="@id/gateView"
+        app:text_detail="@string/class_detail"
+        app:text_title="@string/class_title" />
+
+    <com.example.boardingpass.BoardingPassDetailView
+        android:id="@+id/departureTimeView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        app:layout_constraintStart_toStartOf="@+id/startGuideline"
+        app:layout_constraintTop_toBottomOf="@+id/flightNumberView"
+        app:text_detail="@string/departure_time_detail"
+        app:text_title="@string/departure_time_title" />
+
+    <com.example.boardingpass.BoardingPassDetailView
+        android:id="@+id/arrivalTimeView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        app:layout_constraintEnd_toStartOf="@+id/endGuideline"
+        app:layout_constraintTop_toBottomOf="@+id/classView"
+        app:text_detail="@string/arrival_time_detail"
+        app:text_title="@string/arrival_time_title" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/bgBottomImageView"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:background="@color/peach"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.Circle" />
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/bottomImageView"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_qr_code"
+        app:altSrc="@drawable/ic_plane_rotation"
+        app:layout_constraintBottom_toBottomOf="@+id/bgBottomImageView"
+        app:layout_constraintEnd_toEndOf="@+id/bgBottomImageView"
+        app:layout_constraintStart_toStartOf="@+id/bgBottomImageView"
+        app:layout_constraintTop_toTopOf="@id/bgBottomImageView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

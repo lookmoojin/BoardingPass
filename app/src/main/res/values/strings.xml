@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">BoardingPass</string>
+
+    <string name="bkk_airport">Suvarnabhumi</string>
+    <string name="hkt_airport">Phuket International</string>
+
+    <string name="short_bkk_airport">BKK</string>
+    <string name="short_hkt_airport">HKT</string>
+
+    <string name="boarding_time_title">Boarding Time</string>
+    <string name="boarding_time_detail">08:30, Feb 22</string>
+
+    <string name="passenger_title">Passenger</string>
+    <string name="passenger_detail">Name Surname</string>
+
+    <string name="date_title">Date</string>
+    <string name="date_detail">22/02/2022</string>
+
+    <string name="flight_number_title">Flight No.</string>
+    <string name="flight_number_detail">AN2222</string>
+
+    <string name="gate_title">Gate</string>
+    <string name="gate_detail">9</string>
+
+    <string name="seat_title">Seat</string>
+    <string name="seat_detail">14A</string>
+
+    <string name="class_title">Class</string>
+    <string name="class_detail">Business</string>
+
+    <string name="departure_time_title">Departure Time</string>
+    <string name="departure_time_detail">09:00</string>
+
+    <string name="arrival_time_title">Arrival Time</string>
+    <string name="arrival_time_detail">10:10</string>
+
+    <string name="qr_code_text">Show your QR code at boarding gate.</string>
+
+</resources>

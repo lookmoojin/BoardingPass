@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--LargeTitle-->
+    <style name="LargeTitle">
+        <item name="android:textSize">34sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="LargeTitle.White">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <!--Title-->
+    <style name="Title">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="Title.Bold">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Title.Bold.Grey600">
+        <item name="android:textColor">@color/grey_600</item>
+    </style>
+
+    <style name="Title.Bold.White">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <!--Header1-->
+    <style name="Header1">
+        <item name="android:textSize">22sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <!--Header2-->
+    <style name="Header2">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="Header2.Bold">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Header2.Bold.Gray400">
+        <item name="android:textColor">@color/grey_400</item>
+    </style>
+
+    <!--Header3-->
+    <style name="Header3">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="Header3.Bold">
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="Header3.Bold.White">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <!--Body-->
+    <style name="Body">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="Body.Bold">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Body.Bold.Black">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="Body.Bold.Gray300">
+        <item name="android:textColor">@color/grey_300</item>
+    </style>
+
+    <style name="Body.Bold.White">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <!--Small-->
+    <style name="Small">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/grey_300</item>
+    </style>
+
+    <!--ExtraSmall-->
+    <style name="ExtraSmall">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+</resources>
