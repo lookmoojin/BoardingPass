@@ -1,19 +1,126 @@
 <?xml version="1.0" encoding="utf-8"?>
-<MotionScene 
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:motion="http://schemas.android.com/apk/res-auto">
 
     <Transition
         motion:constraintSetEnd="@+id/end"
         motion:constraintSetStart="@id/start"
         motion:duration="1000">
-       <KeyFrameSet>
-       </KeyFrameSet>
+
+        <OnSwipe
+            motion:dragDirection="dragUp"
+            motion:touchAnchorId="@id/bgBottomImageView"
+            motion:touchAnchorSide="top" />
     </Transition>
 
     <ConstraintSet android:id="@+id/start">
+        <Constraint
+            android:id="@+id/bgBottomImageView"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent" />
+        <Constraint
+            android:id="@+id/planeRouteImageView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/plane_route"
+            motion:layout_constraintEnd_toEndOf="@+id/endGuideline"
+            motion:layout_constraintStart_toStartOf="@+id/startGuideline"
+            motion:layout_constraintTop_toTopOf="@id/topGuideline" />
+        <Constraint
+            android:id="@+id/startDestinationTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintStart_toStartOf="@id/startGuideline"
+            motion:layout_constraintTop_toBottomOf="@+id/planeRouteImageView" />
+        <Constraint
+            android:id="@+id/endDestinationTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintEnd_toStartOf="@+id/endGuideline"
+            motion:layout_constraintTop_toBottomOf="@+id/planeRouteImageView" />
+        <Constraint
+            android:id="@+id/passengerView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            motion:layout_constraintStart_toStartOf="@+id/startGuideline"
+            motion:layout_constraintTop_toBottomOf="@+id/startAirportTextView" />
+        <Constraint
+            android:id="@+id/bgQrCodeRootView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toBottomOf="@id/bgBottomImageView" />
+        <Constraint
+            android:id="@+id/bottomImageView"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            motion:layout_constraintBottom_toBottomOf="@+id/bgButtonImageView"
+            motion:layout_constraintEnd_toEndOf="@+id/bgButtonImageView"
+            motion:layout_constraintStart_toStartOf="@+id/bgButtonImageView"
+            motion:layout_constraintTop_toTopOf="@id/bgButtonImageView" />
     </ConstraintSet>
 
     <ConstraintSet android:id="@+id/end">
+        <Constraint
+            android:id="@+id/bgBottomImageView"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="@id/topQrCodeGuideline" />
+        <Constraint
+            android:id="@+id/planeRouteImageView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            motion:layout_constraintBottom_toBottomOf="@id/startDestinationTextView"
+            motion:layout_constraintEnd_toStartOf="@id/endDestinationTextView"
+            motion:layout_constraintStart_toEndOf="@id/startDestinationTextView"
+            motion:layout_constraintTop_toTopOf="@id/startDestinationTextView" />
+        <Constraint
+            android:id="@+id/startDestinationTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            motion:layout_constraintStart_toStartOf="@id/startGuideline"
+            motion:layout_constraintTop_toBottomOf="@id/qrCodeImageView" />
+        <Constraint
+            android:id="@+id/endDestinationTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintEnd_toStartOf="@+id/endGuideline"
+            motion:layout_constraintTop_toTopOf="@id/startDestinationTextView" />
+        <Constraint
+            android:id="@+id/passengerView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            motion:layout_constraintStart_toStartOf="@+id/startGuideline"
+            motion:layout_constraintTop_toBottomOf="@+id/startDestinationTextView" />
+        <Constraint
+            android:id="@+id/bgQrCodeRootView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toBottomOf="@id/bgBottomImageView" />
+        <Constraint
+            android:id="@+id/bottomImageView"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            motion:layout_constraintBottom_toBottomOf="@+id/bgButtonImageView"
+            motion:layout_constraintEnd_toEndOf="@+id/bgButtonImageView"
+            motion:layout_constraintStart_toStartOf="@+id/bgButtonImageView"
+            motion:layout_constraintTop_toTopOf="@id/bgButtonImageView" />
     </ConstraintSet>
 </MotionScene>
