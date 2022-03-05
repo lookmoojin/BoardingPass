@@ -179,9 +179,7 @@
         android:id="@+id/qrCodeImageView"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="48dp"
         android:layout_marginTop="24dp"
-        android:layout_marginEnd="48dp"
         android:adjustViewBounds="true"
         android:background="@android:color/white"
         android:src="@drawable/ic_qr_code"
@@ -189,6 +187,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/qrCodeDetailTextView"
+        app:layout_constraintWidth_percent="0.7"
         app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.Corner10"
         app:tint="@color/black" />
 
@@ -259,7 +258,7 @@
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:src="@drawable/ic_plane_rotation"
-        android:visibility="gone"
+        android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="@+id/bgButtonImageView"
         app:layout_constraintEnd_toEndOf="@+id/bgButtonImageView"
         app:layout_constraintStart_toStartOf="@+id/bgButtonImageView"
