@@ -179,10 +179,20 @@
 
     <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/bgBottomImageView"
-        android:layout_width="55dp"
-        android:layout_height="55dp"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
         android:background="@color/peach"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/bgButtonImageView"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:background="@color/blue"
+        app:layout_constraintTop_toTopOf="@id/bgBottomImageView"
+        app:layout_constraintBottom_toBottomOf="@id/bgBottomImageView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.Circle" />
@@ -193,9 +203,9 @@
         android:layout_height="30dp"
         android:src="@drawable/ic_qr_code"
         app:altSrc="@drawable/ic_plane_rotation"
-        app:layout_constraintBottom_toBottomOf="@+id/bgBottomImageView"
-        app:layout_constraintEnd_toEndOf="@+id/bgBottomImageView"
-        app:layout_constraintStart_toStartOf="@+id/bgBottomImageView"
-        app:layout_constraintTop_toTopOf="@id/bgBottomImageView" />
+        app:layout_constraintBottom_toBottomOf="@+id/bgButtonImageView"
+        app:layout_constraintEnd_toEndOf="@+id/bgButtonImageView"
+        app:layout_constraintStart_toStartOf="@+id/bgButtonImageView"
+        app:layout_constraintTop_toTopOf="@id/bgButtonImageView" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
