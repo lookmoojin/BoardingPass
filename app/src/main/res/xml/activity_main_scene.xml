@@ -75,7 +75,6 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginEnd="16dp"
-            android:src="@drawable/plane_route"
             motion:layout_constraintEnd_toEndOf="@+id/endGuideline"
             motion:layout_constraintStart_toStartOf="@+id/startGuideline"
             motion:layout_constraintTop_toTopOf="@id/topGuideline" />
