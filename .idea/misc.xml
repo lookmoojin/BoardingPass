@@ -3,14 +3,18 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable/ic_airplane.xml" value="0.1625" />
+        <entry key="app/src/main/res/drawable/ic_bottom.xml" value="0.1625" />
         <entry key="app/src/main/res/drawable/ic_icon_qr_code.xml" value="0.1575" />
         <entry key="app/src/main/res/drawable/ic_plane.xml" value="0.1575" />
         <entry key="app/src/main/res/drawable/ic_plane_rotation.xml" value="0.1575" />
         <entry key="app/src/main/res/drawable/ic_plane_top.xml" value="0.1575" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.27590332031250003" />
-        <entry key="app/src/main/res/layout/activity_splash.xml" value="0.24832967122395833" />
+        <entry key="app/src/main/res/drawable/ic_top.xml" value="0.1625" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.13703703703703704" />
+        <entry key="app/src/main/res/layout/activity_splash.xml" value="0.25492604573567706" />
         <entry key="app/src/main/res/layout/view_boarding_pass_detail.xml" value="0.3098958333333333" />
         <entry key="app/src/main/res/layout/view_qr_code.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/view_start_splash.xml" value="0.25" />
         <entry key="app/src/main/res/layout/view_text_detail.xml" value="0.3098958333333333" />
       </map>
     </option>
