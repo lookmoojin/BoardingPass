@@ -3,9 +3,8 @@ package com.example.boardingpass
 import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
-import android.os.Handler
-import android.os.Looper
 import androidx.appcompat.app.AppCompatActivity
+import androidx.constraintlayout.motion.widget.MotionLayout
 import com.example.boardingpass.databinding.ActivitySplashBinding
 
 @SuppressLint("CustomSplashScreen")
@@ -18,13 +17,41 @@ class SplashActivity : AppCompatActivity() {
         binding = ActivitySplashBinding.inflate(layoutInflater)
         val view = binding.root
         setContentView(view)
+        initMotionListener()
+    }
 
-        Handler(Looper.getMainLooper()).postDelayed(
-            {
+    private fun initMotionListener() = with(binding) {
+        root.addTransitionListener(object : MotionLayout.TransitionListener {
+            override fun onTransitionStarted(
+                motionLayout: MotionLayout?,
+                startId: Int,
+                endId: Int
+            ) {
+                Unit
+            }
+
+            override fun onTransitionChange(
+                motionLayout: MotionLayout?,
+                startId: Int,
+                endId: Int,
+                progress: Float
+            ) {
+                Unit
+            }
+
+            override fun onTransitionCompleted(motionLayout: MotionLayout?, currentId: Int) {
                 goToMainActivity()
-            },
-            3000L
-        )
+            }
+
+            override fun onTransitionTrigger(
+                motionLayout: MotionLayout?,
+                triggerId: Int,
+                positive: Boolean,
+                progress: Float
+            ) {
+                Unit
+            }
+        })
     }
 
     private fun goToMainActivity() {

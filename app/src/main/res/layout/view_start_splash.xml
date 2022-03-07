@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    app:layoutDescription="@xml/activity_splash_scene"
     tools:context=".SplashActivity">
 
     <androidx.constraintlayout.widget.Guideline
@@ -19,9 +18,8 @@
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:src="@drawable/ic_plane"
-        app:layout_constraintBottom_toTopOf="@+id/bTextView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.textview.MaterialTextView
         android:id="@+id/bTextView"
@@ -29,11 +27,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="B"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@id/oTextView"
-        app:layout_constraintHorizontal_chainStyle="packed"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textGuideline" />
 
     <com.google.android.material.textview.MaterialTextView
         android:id="@+id/oTextView"
@@ -41,10 +36,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="O"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@id/aFirstTextView"
-        app:layout_constraintStart_toEndOf="@id/bTextView"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textGuideline" />
 
     <com.google.android.material.textview.MaterialTextView
         android:id="@+id/aFirstTextView"
@@ -52,10 +45,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="A"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@id/rTextView"
-        app:layout_constraintStart_toEndOf="@id/oTextView"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textGuideline" />
 
     <com.google.android.material.textview.MaterialTextView
         android:id="@+id/rTextView"
@@ -63,10 +54,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="R"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@id/dTextView"
-        app:layout_constraintStart_toEndOf="@id/aFirstTextView"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textGuideline" />
 
     <com.google.android.material.textview.MaterialTextView
         android:id="@+id/dTextView"
@@ -74,10 +63,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="D"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@id/iTextView"
-        app:layout_constraintStart_toEndOf="@id/rTextView"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textGuideline" />
 
     <com.google.android.material.textview.MaterialTextView
         android:id="@+id/iTextView"
@@ -85,10 +72,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="I"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@id/nTextView"
-        app:layout_constraintStart_toEndOf="@id/dTextView"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textGuideline" />
 
     <com.google.android.material.textview.MaterialTextView
         android:id="@+id/nTextView"
@@ -96,10 +81,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="N"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@id/gTextView"
-        app:layout_constraintStart_toEndOf="@id/iTextView"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textGuideline" />
 
     <com.google.android.material.textview.MaterialTextView
         android:id="@+id/gTextView"
@@ -107,10 +90,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="G"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@id/pTextView"
-        app:layout_constraintStart_toEndOf="@id/nTextView"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textGuideline" />
 
     <com.google.android.material.textview.MaterialTextView
         android:id="@+id/pTextView"
@@ -119,10 +100,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:text="P"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@id/aSecondTextView"
-        app:layout_constraintStart_toEndOf="@id/gTextView"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textGuideline" />
 
     <com.google.android.material.textview.MaterialTextView
         android:id="@+id/aSecondTextView"
@@ -130,10 +109,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="A"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@id/sFirstTextView"
-        app:layout_constraintStart_toEndOf="@id/pTextView"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textGuideline" />
 
     <com.google.android.material.textview.MaterialTextView
         android:id="@+id/sFirstTextView"
@@ -141,10 +118,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="S"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@id/sEndTextView"
-        app:layout_constraintStart_toEndOf="@id/aSecondTextView"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textGuideline" />
 
     <com.google.android.material.textview.MaterialTextView
         android:id="@+id/sEndTextView"
@@ -152,9 +127,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="S"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/sFirstTextView"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textGuideline" />
 
-</androidx.constraintlayout.motion.widget.MotionLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

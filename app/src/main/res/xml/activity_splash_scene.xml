@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        motion:autoTransition="animateToEnd"
+        motion:constraintSetEnd="@+id/end"
+        motion:constraintSetStart="@id/start"
+        motion:duration="2500">
+        <KeyFrameSet>
+            <KeyAttribute
+                android:scaleX="0.5"
+                android:scaleY="0.5"
+                motion:framePosition="0"
+                motion:motionTarget="@id/planeImageView" />
+            <KeyCycle
+                motion:framePosition="50"
+                motion:motionTarget="@id/sEndTextView"
+                motion:waveOffset="0dp"
+                motion:wavePeriod="1"
+                motion:waveShape="sin" />
+        </KeyFrameSet>
+    </Transition>
+
+    <ConstraintSet android:id="@+id/start">
+        <Constraint
+            android:id="@+id/planeImageView"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/ic_plane"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent" />
+
+        <Constraint
+            android:id="@+id/bTextView"
+            style="@style/Title.Bold.Grey600"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="B"
+            motion:layout_constraintStart_toEndOf="parent"
+            motion:layout_constraintTop_toBottomOf="@+id/textGuideline" />
+
+        <Constraint
+            android:id="@+id/oTextView"
+            style="@style/Title.Bold.Grey600"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="O"
+            motion:layout_constraintStart_toEndOf="parent"
+            motion:layout_constraintTop_toBottomOf="@+id/textGuideline" />
+
+        <Constraint
+            android:id="@+id/aFirstTextView"
+            style="@style/Title.Bold.Grey600"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A"
+            motion:layout_constraintStart_toEndOf="parent"
+            motion:layout_constraintTop_toBottomOf="@+id/textGuideline" />
+
+        <Constraint
+            android:id="@+id/rTextView"
+            style="@style/Title.Bold.Grey600"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="R"
+            motion:layout_constraintStart_toEndOf="parent"
+            motion:layout_constraintTop_toBottomOf="@+id/textGuideline" />
+
+        <Constraint
+            android:id="@+id/dTextView"
+            style="@style/Title.Bold.Grey600"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="D"
+            motion:layout_constraintStart_toEndOf="parent"
+            motion:layout_constraintTop_toBottomOf="@+id/textGuideline" />
+
+        <Constraint
+            android:id="@+id/iTextView"
+            style="@style/Title.Bold.Grey600"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="I"
+            motion:layout_constraintStart_toEndOf="parent"
+            motion:layout_constraintTop_toBottomOf="@+id/textGuideline" />
+
+        <Constraint
+            android:id="@+id/nTextView"
+            style="@style/Title.Bold.Grey600"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="N"
+            motion:layout_constraintStart_toEndOf="parent"
+            motion:layout_constraintTop_toBottomOf="@+id/textGuideline" />
+
+        <Constraint
+            android:id="@+id/gTextView"
+            style="@style/Title.Bold.Grey600"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="G"
+            motion:layout_constraintStart_toEndOf="parent"
+            motion:layout_constraintTop_toBottomOf="@+id/textGuideline" />
+
+        <Constraint
+            android:id="@+id/pTextView"
+            style="@style/Title.Bold.Grey600"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="P"
+            motion:layout_constraintStart_toEndOf="parent"
+            motion:layout_constraintTop_toBottomOf="@+id/textGuideline" />
+
+        <Constraint
+            android:id="@+id/aSecondTextView"
+            style="@style/Title.Bold.Grey600"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A"
+            motion:layout_constraintStart_toEndOf="parent"
+            motion:layout_constraintTop_toBottomOf="@+id/textGuideline" />
+
+        <Constraint
+            android:id="@+id/sFirstTextView"
+            style="@style/Title.Bold.Grey600"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="S"
+            motion:layout_constraintStart_toEndOf="parent"
+            motion:layout_constraintTop_toBottomOf="@+id/textGuideline" />
+
+        <Constraint
+            android:id="@+id/sEndTextView"
+            style="@style/Title.Bold.Grey600"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="S"
+            motion:layout_constraintStart_toEndOf="parent"
+            motion:layout_constraintTop_toBottomOf="@+id/textGuideline" />
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end"></ConstraintSet>
+</MotionScene>
