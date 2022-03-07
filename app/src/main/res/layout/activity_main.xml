@@ -144,11 +144,12 @@
         app:text_detail="@string/arrival_time_detail"
         app:text_title="@string/arrival_time_title" />
 
-    <com.google.android.material.imageview.ShapeableImageView
+    <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/bgBottomImageView"
         android:layout_width="match_parent"
-        android:layout_height="65dp"
-        android:background="@color/peach"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:src="@drawable/ic_bottom"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -232,8 +233,8 @@
 
     <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/bgButtonImageView"
-        android:layout_width="55dp"
-        android:layout_height="55dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:background="@color/blue"
         app:layout_constraintBottom_toBottomOf="@id/bgBottomImageView"
         app:layout_constraintEnd_toEndOf="parent"
