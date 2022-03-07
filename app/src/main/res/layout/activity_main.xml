@@ -198,7 +198,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:adjustViewBounds="true"
-        android:src="@drawable/plane_route"
+        android:src="@drawable/ic_airplane_with_start_end"
         app:layout_constraintEnd_toEndOf="@+id/endGuideline"
         app:layout_constraintStart_toStartOf="@+id/startGuideline"
         app:layout_constraintTop_toTopOf="@id/topGuideline" />
