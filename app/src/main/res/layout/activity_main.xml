@@ -19,7 +19,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.12" />
+        app:layout_constraintGuide_percent="0.15" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/startGuideline"
@@ -71,6 +71,16 @@
         android:text="@string/hkt_airport"
         app:layout_constraintEnd_toStartOf="@+id/endGuideline"
         app:layout_constraintTop_toBottomOf="@+id/endDestinationTextView" />
+
+    <com.example.boardingpass.BoardingPassDetailView
+        android:id="@+id/passengerView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        app:layout_constraintStart_toStartOf="@+id/startGuideline"
+        app:layout_constraintTop_toBottomOf="@+id/startAirportTextView"
+        app:text_detail="@string/passenger_detail"
+        app:text_title="@string/passenger_title" />
 
     <com.example.boardingpass.BoardingPassDetailView
         android:id="@+id/dateView"
@@ -144,15 +154,17 @@
         app:text_detail="@string/arrival_time_detail"
         app:text_title="@string/arrival_time_title" />
 
-    <androidx.appcompat.widget.AppCompatImageView
+    <androidx.constraintlayout.utils.widget.ImageFilterView
         android:id="@+id/bgBottomImageView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
         android:src="@drawable/ic_bottom"
+        app:altSrc="@drawable/ic_top"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:overlay="false" />
 
     <View
         android:id="@+id/bgQrCodeRootView"
@@ -169,7 +181,6 @@
         style="@style/Body.Bold.Black"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
         android:text="@string/qr_code_text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -182,7 +193,7 @@
         android:layout_marginTop="24dp"
         android:adjustViewBounds="true"
         android:background="@android:color/white"
-        android:src="@drawable/ic_qr_code"
+        android:src="@drawable/ic_qr_code_github"
         app:contentPadding="60dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -221,16 +232,6 @@
         app:layout_constraintEnd_toStartOf="@+id/endGuideline"
         app:layout_constraintTop_toBottomOf="@+id/planeRouteImageView" />
 
-    <com.example.boardingpass.BoardingPassDetailView
-        android:id="@+id/passengerView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
-        app:layout_constraintStart_toStartOf="@+id/startGuideline"
-        app:layout_constraintTop_toBottomOf="@+id/startAirportTextView"
-        app:text_detail="@string/passenger_detail"
-        app:text_title="@string/passenger_title" />
-
     <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/bgButtonImageView"
         android:layout_width="50dp"
@@ -242,26 +243,16 @@
         app:layout_constraintTop_toTopOf="@id/bgBottomImageView"
         app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.Circle" />
 
-    <androidx.appcompat.widget.AppCompatImageView
-        android:id="@+id/qrCodeIconImageView"
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/iconBottomImageView"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:src="@drawable/ic_qr_code"
-        android:visibility="visible"
+        app:altSrc="@drawable/ic_plane_rotation"
         app:layout_constraintBottom_toBottomOf="@+id/bgButtonImageView"
         app:layout_constraintEnd_toEndOf="@+id/bgButtonImageView"
         app:layout_constraintStart_toStartOf="@+id/bgButtonImageView"
-        app:layout_constraintTop_toTopOf="@id/bgButtonImageView" />
-
-    <androidx.appcompat.widget.AppCompatImageView
-        android:id="@+id/planeIconImageView"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:src="@drawable/ic_plane_rotation"
-        android:visibility="invisible"
-        app:layout_constraintBottom_toBottomOf="@+id/bgButtonImageView"
-        app:layout_constraintEnd_toEndOf="@+id/bgButtonImageView"
-        app:layout_constraintStart_toStartOf="@+id/bgButtonImageView"
-        app:layout_constraintTop_toTopOf="@id/bgButtonImageView" />
+        app:layout_constraintTop_toTopOf="@id/bgButtonImageView"
+        app:overlay="false" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
