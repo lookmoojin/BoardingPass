@@ -51,7 +51,7 @@
         style="@style/Header2.Bold.Gray400"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="32dp"
         android:text="@string/boarding_time_title"
         app:layout_constraintEnd_toStartOf="@+id/endGuideline"
         app:layout_constraintTop_toTopOf="parent" />
