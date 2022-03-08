@@ -3,9 +3,11 @@ package com.example.boardingpass
 import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
+import android.view.WindowManager
 import androidx.appcompat.app.AppCompatActivity
 import androidx.constraintlayout.motion.widget.MotionLayout
 import com.example.boardingpass.databinding.ActivitySplashBinding
+
 
 @SuppressLint("CustomSplashScreen")
 class SplashActivity : AppCompatActivity() {
@@ -18,6 +20,10 @@ class SplashActivity : AppCompatActivity() {
         val view = binding.root
         setContentView(view)
         initMotionListener()
+        window?.setFlags(
+            WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS,
+            WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS
+        )
     }
 
     private fun initMotionListener() = with(binding) {
