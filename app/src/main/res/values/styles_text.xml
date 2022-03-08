@@ -20,6 +20,10 @@
         <item name="android:textStyle">bold</item>
     </style>
 
+    <style name="Title.Bold.Black">
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
     <style name="Title.Bold.Grey600">
         <item name="android:textColor">@color/grey_600</item>
     </style>
@@ -75,18 +79,20 @@
         <item name="android:textColor">@color/black</item>
     </style>
 
-    <style name="Body.Bold.Gray300">
+    <style name="Body.Bold.Grey300">
         <item name="android:textColor">@color/grey_300</item>
     </style>
 
-    <style name="Body.Bold.White">
-        <item name="android:textColor">@android:color/white</item>
+    <style name="Body.Bold.Grey600">
+        <item name="android:textColor">@color/grey_600</item>
     </style>
 
     <!--Small-->
     <style name="Small">
         <item name="android:textSize">14sp</item>
         <item name="android:textStyle">normal</item>
+    </style>
+    <style name="Small.Grey300">
         <item name="android:textColor">@color/grey_300</item>
     </style>
 

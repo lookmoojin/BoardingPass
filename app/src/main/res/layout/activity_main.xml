@@ -56,7 +56,7 @@
 
     <com.google.android.material.textview.MaterialTextView
         android:id="@+id/startAirportTextView"
-        style="@style/Body.Bold.Gray300"
+        style="@style/Body.Bold.Grey300"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/bkk_airport"
@@ -65,7 +65,7 @@
 
     <com.google.android.material.textview.MaterialTextView
         android:id="@+id/endAirportTextView"
-        style="@style/Body.Bold.Gray300"
+        style="@style/Body.Bold.Grey300"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/hkt_airport"
@@ -194,7 +194,7 @@
         android:adjustViewBounds="true"
         android:background="@android:color/white"
         android:src="@drawable/ic_qr_code_github"
-        app:contentPadding="60dp"
+        app:contentPadding="40dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/qrCodeDetailTextView"

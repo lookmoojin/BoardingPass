@@ -42,11 +42,32 @@
         android:adjustViewBounds="true"
         android:background="@android:color/white"
         android:src="@drawable/ic_qr_code_github"
-        app:contentPadding="60dp"
+        app:contentPadding="40dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/qrCodeDetailTextView"
         app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.Corner10"
         app:tint="@color/black" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/titleTextView"
+        style="@style/Body.Bold.Grey600"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:text="@string/passenger_title"
+        app:layout_constraintBottom_toTopOf="@+id/detailTextView"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/detailTextView"
+        style="@style/Title.Bold.Black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="40dp"
+        android:text="@string/passenger_detail"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

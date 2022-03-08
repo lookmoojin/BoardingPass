@@ -7,7 +7,7 @@
 
     <com.google.android.material.textview.MaterialTextView
         android:id="@+id/titleTextView"
-        style="@style/Small"
+        style="@style/Small.Grey300"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
