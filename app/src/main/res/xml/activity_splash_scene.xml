@@ -20,12 +20,6 @@
                 motion:keyPositionType="parentRelative"
                 motion:motionTarget="@id/planeImageView"
                 motion:percentY="0.32" />
-<!--            <KeyPosition-->
-<!--                motion:framePosition="30"-->
-<!--                motion:keyPositionType="pathRelative"-->
-<!--                motion:motionTarget="@id/planeImageView"-->
-<!--                motion:percentY="0.3"-->
-<!--                motion:percentX="0.8"/>-->
 
             <!--boarding-->
             <KeyCycle

@@ -41,6 +41,18 @@
                 motion:framePosition="95"
                 motion:motionTarget="@id/endDestinationTextView" />
 
+            <!--startAirportTextView-->
+            <KeyAttribute
+                android:alpha="0"
+                motion:framePosition="50"
+                motion:motionTarget="@id/startAirportTextView" />
+
+            <!--endAirportTextView-->
+            <KeyAttribute
+                android:alpha="0"
+                motion:framePosition="50"
+                motion:motionTarget="@id/endAirportTextView" />
+
             <!--planeRouteImageView-->
             <KeyAttribute
                 android:alpha="0"
@@ -92,10 +104,59 @@
                 motion:keyPositionType="parentRelative"
                 motion:motionTarget="@id/passengerNameTextView"
                 motion:percentY="0.8" />
+
+            <!--planeImageView-->
+            <KeyCycle
+                android:translationX="120dp"
+                motion:framePosition="50"
+                motion:motionTarget="@id/planeImageView"
+                motion:waveOffset="0dp"
+                motion:wavePeriod="0.5"
+                motion:waveShape="sin" />
+            <KeyAttribute
+                android:rotation="90"
+                motion:framePosition="20"
+                motion:motionTarget="@id/planeImageView" />
+            <KeyAttribute
+                android:rotation="170"
+                motion:framePosition="40"
+                motion:motionTarget="@id/planeImageView" />
+            <KeyAttribute
+                android:rotation="90"
+                motion:framePosition="55"
+                motion:motionTarget="@id/planeImageView" />
+            <KeyAttribute
+                android:rotation="45"
+                motion:framePosition="90"
+                motion:motionTarget="@id/planeImageView" />
+            <KeyAttribute
+                android:alpha="1"
+                motion:framePosition="35"
+                motion:motionTarget="@id/planeImageView" />
+            <KeyAttribute
+                android:alpha="0"
+                motion:framePosition="90"
+                motion:motionTarget="@id/planeImageView" />
+            <KeyAttribute
+                android:alpha="1"
+                motion:framePosition="95"
+                motion:motionTarget="@id/planeImageView" />
         </KeyFrameSet>
     </Transition>
 
     <ConstraintSet android:id="@+id/start">
+        <Constraint
+            android:id="@+id/gradientImageView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent">
+            <CustomAttribute
+                motion:attributeName="crossfade"
+                motion:customFloatValue="0" />
+        </Constraint>
         <Constraint
             android:id="@+id/bgBottomImageView"
             android:layout_width="match_parent"
@@ -111,11 +172,22 @@
             android:id="@+id/planeRouteImageView"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"
+            android:padding="24dp"
             motion:layout_constraintEnd_toEndOf="@+id/endGuideline"
             motion:layout_constraintStart_toStartOf="@+id/startGuideline"
             motion:layout_constraintTop_toTopOf="@id/topGuideline">
+            <CustomAttribute
+                motion:attributeName="ColorFilter"
+                motion:customColorValue="@color/white" />
+        </Constraint>
+        <Constraint
+            android:id="@+id/planeImageView"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            motion:layout_constraintBottom_toBottomOf="@+id/planeRouteImageView"
+            motion:layout_constraintEnd_toEndOf="@+id/planeRouteImageView"
+            motion:layout_constraintStart_toStartOf="@id/planeRouteImageView"
+            motion:layout_constraintTop_toTopOf="@+id/planeRouteImageView">
             <CustomAttribute
                 motion:attributeName="ColorFilter"
                 motion:customColorValue="@color/white" />
@@ -215,12 +287,24 @@
             android:id="@+id/planeRouteImageView"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
             motion:layout_constraintBottom_toBottomOf="@id/startDestinationTextView"
             motion:layout_constraintEnd_toStartOf="@id/endDestinationTextView"
             motion:layout_constraintStart_toEndOf="@id/startDestinationTextView"
             motion:layout_constraintTop_toTopOf="@id/startDestinationTextView">
+            <CustomAttribute
+                motion:attributeName="ColorFilter"
+                motion:customColorValue="@color/black" />
+        </Constraint>
+        <Constraint
+            android:id="@+id/planeImageView"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            motion:layout_constraintBottom_toBottomOf="@+id/planeRouteImageView"
+            motion:layout_constraintEnd_toEndOf="@+id/planeRouteImageView"
+            motion:layout_constraintStart_toStartOf="@id/planeRouteImageView"
+            motion:layout_constraintTop_toTopOf="@+id/planeRouteImageView">
             <CustomAttribute
                 motion:attributeName="ColorFilter"
                 motion:customColorValue="@color/black" />
