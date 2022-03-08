@@ -57,7 +57,7 @@
 
     <com.google.android.material.textview.MaterialTextView
         android:id="@+id/startAirportTextView"
-        style="@style/Body.Bold.Gray300"
+        style="@style/Body.Bold.Grey300"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/bkk_airport"
@@ -66,7 +66,7 @@
 
     <com.google.android.material.textview.MaterialTextView
         android:id="@+id/endAirportTextView"
-        style="@style/Body.Bold.Gray300"
+        style="@style/Body.Bold.Grey300"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/hkt_airport"
@@ -195,13 +195,36 @@
         android:adjustViewBounds="true"
         android:background="@android:color/white"
         android:src="@drawable/ic_qr_code_github"
-        app:contentPadding="60dp"
+        app:contentPadding="40dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/qrCodeDetailTextView"
         app:layout_constraintWidth_percent="0.7"
         app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.Corner10"
         app:tint="@color/black" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/passengerNameTitleTextView"
+        style="@style/Body.Bold.Grey600"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:visibility="invisible"
+        android:text="@string/passenger_title"
+        app:layout_constraintBottom_toTopOf="@+id/passengerNameTextView"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/passengerNameTextView"
+        style="@style/Title.Bold.Black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="40dp"
+        android:visibility="invisible"
+        android:text="@string/passenger_detail"
+        app:layout_constraintBottom_toBottomOf="@+id/bgQrCodeRootView"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/planeRouteImageView"
