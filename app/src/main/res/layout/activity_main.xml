@@ -4,9 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/blue"
+    android:background="@drawable/bg_phuket"
     app:layoutDescription="@xml/activity_main_scene"
     tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/gradientImageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/bg_gradient"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/topGuideline"
@@ -208,23 +218,21 @@
         style="@style/Body.Bold.Grey600"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:visibility="invisible"
         android:text="@string/passenger_title"
-        app:layout_constraintBottom_toTopOf="@+id/passengerNameTextView"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="@+id/startGuideline"
+        app:layout_constraintTop_toBottomOf="@+id/startDestinationTextView" />
 
     <com.google.android.material.textview.MaterialTextView
         android:id="@+id/passengerNameTextView"
         style="@style/Title.Bold.Black"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
         android:layout_marginBottom="40dp"
-        android:visibility="invisible"
         android:text="@string/passenger_detail"
-        app:layout_constraintBottom_toBottomOf="@+id/bgQrCodeRootView"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="@+id/startGuideline"
+        app:layout_constraintTop_toBottomOf="@+id/passengerNameTitleTextView" />
 
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/planeRouteImageView"
