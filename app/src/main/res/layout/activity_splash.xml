@@ -4,7 +4,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/peach_transparent_80"
     tools:context=".SplashActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/startTextGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.4" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/endTextGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.6" />
 
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/planeImageView"
@@ -17,7 +32,7 @@
 
     <com.google.android.material.textview.MaterialTextView
         android:id="@+id/bTextView"
-        style="@style/Title.Bold.Grey600"
+        style="@style/Title.Bold.Blue"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="B"
@@ -29,7 +44,7 @@
 
     <com.google.android.material.textview.MaterialTextView
         android:id="@+id/oTextView"
-        style="@style/Title.Bold.Grey600"
+        style="@style/Title.Bold.Blue"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="O"
@@ -40,7 +55,7 @@
 
     <com.google.android.material.textview.MaterialTextView
         android:id="@+id/aFirstTextView"
-        style="@style/Title.Bold.Grey600"
+        style="@style/Title.Bold.Blue"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="A"
@@ -51,7 +66,7 @@
 
     <com.google.android.material.textview.MaterialTextView
         android:id="@+id/rTextView"
-        style="@style/Title.Bold.Grey600"
+        style="@style/Title.Bold.Blue"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="R"
@@ -62,7 +77,7 @@
 
     <com.google.android.material.textview.MaterialTextView
         android:id="@+id/dTextView"
-        style="@style/Title.Bold.Grey600"
+        style="@style/Title.Bold.Blue"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="D"
@@ -73,7 +88,7 @@
 
     <com.google.android.material.textview.MaterialTextView
         android:id="@+id/iTextView"
-        style="@style/Title.Bold.Grey600"
+        style="@style/Title.Bold.Blue"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="I"
@@ -84,7 +99,7 @@
 
     <com.google.android.material.textview.MaterialTextView
         android:id="@+id/nTextView"
-        style="@style/Title.Bold.Grey600"
+        style="@style/Title.Bold.Blue"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="N"
@@ -95,7 +110,7 @@
 
     <com.google.android.material.textview.MaterialTextView
         android:id="@+id/gTextView"
-        style="@style/Title.Bold.Grey600"
+        style="@style/Title.Bold.Blue"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="G"
@@ -106,7 +121,7 @@
 
     <com.google.android.material.textview.MaterialTextView
         android:id="@+id/pTextView"
-        style="@style/Title.Bold.Grey600"
+        style="@style/Title.Bold.Blue"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -118,7 +133,7 @@
 
     <com.google.android.material.textview.MaterialTextView
         android:id="@+id/aSecondTextView"
-        style="@style/Title.Bold.Grey600"
+        style="@style/Title.Bold.Blue"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="A"
@@ -129,7 +144,7 @@
 
     <com.google.android.material.textview.MaterialTextView
         android:id="@+id/sFirstTextView"
-        style="@style/Title.Bold.Grey600"
+        style="@style/Title.Bold.Blue"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="S"
@@ -140,7 +155,7 @@
 
     <com.google.android.material.textview.MaterialTextView
         android:id="@+id/sEndTextView"
-        style="@style/Title.Bold.Grey600"
+        style="@style/Title.Bold.Blue"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="S"
