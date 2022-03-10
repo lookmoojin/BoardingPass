@@ -274,8 +274,8 @@
 
     <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/bgButtonImageView"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
         android:background="@color/blue"
         app:layout_constraintBottom_toBottomOf="@id/bgBottomImageView"
         app:layout_constraintEnd_toEndOf="parent"
