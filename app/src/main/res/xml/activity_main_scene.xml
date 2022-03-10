@@ -7,25 +7,119 @@
         motion:constraintSetStart="@id/start"
         motion:duration="1000">
 
+        <OnSwipe
+            motion:dragDirection="dragUp"
+            motion:touchAnchorId="@id/bgBottomImageView"
+            motion:touchAnchorSide="top" />
     </Transition>
 
     <ConstraintSet android:id="@+id/start">
         <Constraint
             android:id="@+id/bgBottomImageView"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="65dp"
             motion:layout_constraintBottom_toBottomOf="parent"
             motion:layout_constraintEnd_toEndOf="parent"
             motion:layout_constraintStart_toStartOf="parent" />
+        <Constraint
+            android:id="@+id/planeRouteImageView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="24dp"
+            motion:layout_constraintEnd_toEndOf="@+id/endGuideline"
+            motion:layout_constraintStart_toStartOf="@+id/startGuideline"
+            motion:layout_constraintTop_toTopOf="@id/topGuideline" />
+        <Constraint
+            android:id="@+id/planeImageView"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            motion:layout_constraintBottom_toBottomOf="@+id/planeRouteImageView"
+            motion:layout_constraintEnd_toEndOf="@+id/planeRouteImageView"
+            motion:layout_constraintStart_toStartOf="@id/planeRouteImageView"
+            motion:layout_constraintTop_toTopOf="@+id/planeRouteImageView" />
+        <Constraint
+            android:id="@+id/startDestinationTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintStart_toStartOf="@id/startGuideline"
+            motion:layout_constraintTop_toBottomOf="@+id/planeRouteImageView" />
+        <Constraint
+            android:id="@+id/endDestinationTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintEnd_toStartOf="@+id/endGuideline"
+            motion:layout_constraintTop_toBottomOf="@+id/planeRouteImageView" />
+        <Constraint
+            android:id="@+id/passengerNameTitleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            motion:layout_constraintBottom_toTopOf="@+id/passengerNameTextView"
+            motion:layout_constraintStart_toStartOf="@+id/startGuideline" />
+        <Constraint
+            android:id="@+id/passengerNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            android:visibility="invisible"
+            motion:layout_constraintBottom_toBottomOf="@+id/bgQrCodeRootView"
+            motion:layout_constraintStart_toStartOf="@+id/startGuideline" />
     </ConstraintSet>
 
     <ConstraintSet android:id="@+id/end">
         <Constraint
             android:id="@+id/bgBottomImageView"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="65dp"
             motion:layout_constraintEnd_toEndOf="parent"
             motion:layout_constraintStart_toStartOf="parent"
             motion:layout_constraintTop_toTopOf="@id/topQrCodeGuideline" />
+        <Constraint
+            android:id="@+id/planeRouteImageView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            motion:layout_constraintBottom_toBottomOf="@id/startDestinationTextView"
+            motion:layout_constraintEnd_toStartOf="@id/endDestinationTextView"
+            motion:layout_constraintStart_toEndOf="@id/startDestinationTextView"
+            motion:layout_constraintTop_toTopOf="@id/startDestinationTextView" />
+        <Constraint
+            android:id="@+id/planeImageView"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            motion:layout_constraintBottom_toBottomOf="@+id/planeRouteImageView"
+            motion:layout_constraintEnd_toEndOf="@+id/planeRouteImageView"
+            motion:layout_constraintStart_toStartOf="@id/planeRouteImageView"
+            motion:layout_constraintTop_toTopOf="@+id/planeRouteImageView" />
+        <Constraint
+            android:id="@+id/startDestinationTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            motion:layout_constraintStart_toStartOf="@id/startGuideline"
+            motion:layout_constraintTop_toBottomOf="@id/qrCodeImageView" />
+        <Constraint
+            android:id="@+id/endDestinationTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintEnd_toStartOf="@+id/endGuideline"
+            motion:layout_constraintTop_toTopOf="@id/startDestinationTextView" />
+        <Constraint
+            android:id="@+id/passengerNameTitleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:visibility="visible"
+            motion:layout_constraintStart_toStartOf="@+id/startGuideline"
+            motion:layout_constraintTop_toBottomOf="@+id/startDestinationTextView" />
+
+        <Constraint
+            android:id="@+id/passengerNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            motion:layout_constraintStart_toStartOf="@+id/startGuideline"
+            motion:layout_constraintTop_toBottomOf="@+id/passengerNameTitleTextView" />
     </ConstraintSet>
 </MotionScene>
