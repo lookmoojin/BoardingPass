@@ -168,7 +168,7 @@
     <androidx.constraintlayout.utils.widget.ImageFilterView
         android:id="@+id/bgBottomImageView"
         android:layout_width="match_parent"
-        android:layout_height="65dp"
+        android:layout_height="@dimen/height_bottom_view"
         android:scaleType="fitXY"
         android:src="@drawable/ic_bottom"
         app:altSrc="@drawable/ic_top"
@@ -286,8 +286,8 @@
 
     <androidx.constraintlayout.utils.widget.ImageFilterView
         android:id="@+id/iconBottomImageView"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="@dimen/size_icon"
+        android:layout_height="@dimen/size_icon"
         android:src="@drawable/ic_qr_code"
         app:altSrc="@drawable/ic_plane_rotation"
         app:layout_constraintBottom_toBottomOf="@+id/bgButtonImageView"

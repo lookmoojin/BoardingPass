@@ -17,10 +17,14 @@
         <Constraint
             android:id="@+id/bgBottomImageView"
             android:layout_width="match_parent"
-            android:layout_height="65dp"
+            android:layout_height="@dimen/height_bottom_view"
             motion:layout_constraintBottom_toBottomOf="parent"
             motion:layout_constraintEnd_toEndOf="parent"
-            motion:layout_constraintStart_toStartOf="parent" />
+            motion:layout_constraintStart_toStartOf="parent">
+<!--            <CustomAttribute-->
+<!--                motion:attributeName="crossfade"-->
+<!--                motion:customFloatValue="0" />-->
+        </Constraint>
         <Constraint
             android:id="@+id/planeRouteImageView"
             android:layout_width="0dp"
@@ -50,6 +54,30 @@
             motion:layout_constraintEnd_toStartOf="@+id/endGuideline"
             motion:layout_constraintTop_toBottomOf="@+id/planeRouteImageView" />
         <Constraint
+            android:id="@+id/iconBottomImageView"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            motion:layout_constraintBottom_toBottomOf="@+id/bgButtonImageView"
+            motion:layout_constraintEnd_toEndOf="@+id/bgButtonImageView"
+            motion:layout_constraintStart_toStartOf="@+id/bgButtonImageView"
+            motion:layout_constraintTop_toTopOf="@id/bgButtonImageView">
+            <CustomAttribute
+                motion:attributeName="crossfade"
+                motion:customFloatValue="0" />
+        </Constraint>
+        <Constraint
+            android:id="@+id/bgButtonImageView"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            motion:layout_constraintBottom_toBottomOf="@id/bgBottomImageView"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="@id/bgBottomImageView">
+<!--            <CustomAttribute-->
+<!--                motion:attributeName="backgroundColor"-->
+<!--                motion:customColorValue="@color/blue" />-->
+        </Constraint>
+        <Constraint
             android:id="@+id/passengerNameTitleTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -70,10 +98,14 @@
         <Constraint
             android:id="@+id/bgBottomImageView"
             android:layout_width="match_parent"
-            android:layout_height="65dp"
+            android:layout_height="@dimen/height_bottom_view"
             motion:layout_constraintEnd_toEndOf="parent"
             motion:layout_constraintStart_toStartOf="parent"
-            motion:layout_constraintTop_toTopOf="@id/topQrCodeGuideline" />
+            motion:layout_constraintTop_toTopOf="@id/topQrCodeGuideline">
+<!--            <CustomAttribute-->
+<!--                motion:attributeName="crossfade"-->
+<!--                motion:customFloatValue="1" />-->
+        </Constraint>
         <Constraint
             android:id="@+id/planeRouteImageView"
             android:layout_width="0dp"
@@ -106,6 +138,30 @@
             motion:layout_constraintEnd_toStartOf="@+id/endGuideline"
             motion:layout_constraintTop_toTopOf="@id/startDestinationTextView" />
         <Constraint
+            android:id="@+id/iconBottomImageView"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            motion:layout_constraintBottom_toBottomOf="@+id/bgButtonImageView"
+            motion:layout_constraintEnd_toEndOf="@+id/bgButtonImageView"
+            motion:layout_constraintStart_toStartOf="@+id/bgButtonImageView"
+            motion:layout_constraintTop_toTopOf="@id/bgButtonImageView">
+            <CustomAttribute
+                motion:attributeName="crossfade"
+                motion:customFloatValue="1" />
+        </Constraint>
+        <Constraint
+            android:id="@+id/bgButtonImageView"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            motion:layout_constraintBottom_toBottomOf="@id/bgBottomImageView"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent">
+<!--            <CustomAttribute-->
+<!--                motion:attributeName="backgroundColor"-->
+<!--                motion:customColorValue="@color/peach" />-->
+<!--            android:layout_marginBottom="28dp"-->
+        </Constraint>
+        <Constraint
             android:id="@+id/passengerNameTitleTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -113,7 +169,6 @@
             android:visibility="visible"
             motion:layout_constraintStart_toStartOf="@+id/startGuideline"
             motion:layout_constraintTop_toBottomOf="@+id/startDestinationTextView" />
-
         <Constraint
             android:id="@+id/passengerNameTextView"
             android:layout_width="wrap_content"
