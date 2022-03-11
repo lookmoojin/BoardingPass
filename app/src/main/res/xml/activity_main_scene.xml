@@ -73,9 +73,9 @@
             motion:layout_constraintEnd_toEndOf="parent"
             motion:layout_constraintStart_toStartOf="parent"
             motion:layout_constraintTop_toTopOf="@id/bgBottomImageView">
-            <!--            <CustomAttribute-->
-            <!--                motion:attributeName="backgroundColor"-->
-            <!--                motion:customColorValue="@color/blue" />-->
+                        <CustomAttribute
+                            motion:attributeName="backgroundColor"
+                            motion:customColorValue="@color/blue" />
         </Constraint>
         <Constraint
             android:id="@+id/passengerNameTitleTextView"
@@ -157,9 +157,9 @@
             motion:layout_constraintBottom_toBottomOf="@id/bgBottomImageView"
             motion:layout_constraintEnd_toEndOf="parent"
             motion:layout_constraintStart_toStartOf="parent">
-            <!--            <CustomAttribute-->
-            <!--                motion:attributeName="backgroundColor"-->
-            <!--                motion:customColorValue="@color/peach" />-->
+                        <CustomAttribute
+                            motion:attributeName="backgroundColor"
+                            motion:customColorValue="@color/peach" />
         </Constraint>
         <Constraint
             android:id="@+id/passengerNameTitleTextView"
