@@ -213,23 +213,6 @@
                 motion:customColorValue="@color/white" />
         </Constraint>
         <Constraint
-            android:id="@+id/bgQrCodeRootView"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            motion:layout_constraintBottom_toBottomOf="parent"
-            motion:layout_constraintEnd_toEndOf="parent"
-            motion:layout_constraintStart_toStartOf="parent"
-            motion:layout_constraintTop_toBottomOf="@id/bgBottomImageView" />
-        <Constraint
-            android:id="@+id/qrCodeIconImageView"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:visibility="visible"
-            motion:layout_constraintBottom_toBottomOf="@+id/bgButtonImageView"
-            motion:layout_constraintEnd_toEndOf="@+id/bgButtonImageView"
-            motion:layout_constraintStart_toStartOf="@+id/bgButtonImageView"
-            motion:layout_constraintTop_toTopOf="@id/bgButtonImageView" />
-        <Constraint
             android:id="@+id/iconBottomImageView"
             android:layout_width="30dp"
             android:layout_height="30dp"
@@ -330,14 +313,6 @@
                 motion:attributeName="textColor"
                 motion:customColorValue="@color/black" />
         </Constraint>
-        <Constraint
-            android:id="@+id/bgQrCodeRootView"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            motion:layout_constraintBottom_toBottomOf="parent"
-            motion:layout_constraintEnd_toEndOf="parent"
-            motion:layout_constraintStart_toStartOf="parent"
-            motion:layout_constraintTop_toBottomOf="@id/bgBottomImageView" />
         <Constraint
             android:id="@+id/iconBottomImageView"
             android:layout_width="30dp"
