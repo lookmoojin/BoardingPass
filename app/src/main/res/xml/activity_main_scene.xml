@@ -33,9 +33,9 @@
             motion:layout_constraintEnd_toEndOf="@+id/endGuideline"
             motion:layout_constraintStart_toStartOf="@+id/startGuideline"
             motion:layout_constraintTop_toTopOf="@id/topGuideline">
-            <CustomAttribute
-                motion:attributeName="ColorFilter"
-                motion:customColorValue="@color/white" />
+<!--            <CustomAttribute-->
+<!--                motion:attributeName="ColorFilter"-->
+<!--                motion:customColorValue="@color/white" />-->
         </Constraint>
         <Constraint
             android:id="@+id/planeImageView"
@@ -45,9 +45,9 @@
             motion:layout_constraintEnd_toEndOf="@+id/planeRouteImageView"
             motion:layout_constraintStart_toStartOf="@id/planeRouteImageView"
             motion:layout_constraintTop_toTopOf="@+id/planeRouteImageView">
-            <CustomAttribute
-                motion:attributeName="ColorFilter"
-                motion:customColorValue="@color/white" />
+<!--            <CustomAttribute-->
+<!--                motion:attributeName="ColorFilter"-->
+<!--                motion:customColorValue="@color/white" />-->
         </Constraint>
         <Constraint
             android:id="@+id/startDestinationTextView"
@@ -124,9 +124,9 @@
             motion:layout_constraintEnd_toStartOf="@id/endDestinationTextView"
             motion:layout_constraintStart_toEndOf="@id/startDestinationTextView"
             motion:layout_constraintTop_toTopOf="@id/startDestinationTextView">
-            <CustomAttribute
-                motion:attributeName="ColorFilter"
-                motion:customColorValue="@color/black" />
+<!--            <CustomAttribute-->
+<!--                motion:attributeName="ColorFilter"-->
+<!--                motion:customColorValue="@color/black" />-->
         </Constraint>
         <Constraint
             android:id="@+id/planeImageView"
@@ -136,9 +136,9 @@
             motion:layout_constraintEnd_toEndOf="@+id/planeRouteImageView"
             motion:layout_constraintStart_toStartOf="@id/planeRouteImageView"
             motion:layout_constraintTop_toTopOf="@+id/planeRouteImageView">
-            <CustomAttribute
-                motion:attributeName="ColorFilter"
-                motion:customColorValue="@color/black" />
+<!--            <CustomAttribute-->
+<!--                motion:attributeName="ColorFilter"-->
+<!--                motion:customColorValue="@color/black" />-->
         </Constraint>
         <Constraint
             android:id="@+id/startDestinationTextView"
